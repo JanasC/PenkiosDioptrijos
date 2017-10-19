@@ -21,7 +21,7 @@ namespace Test
             Console.WriteLine("Finding elements...");
             inputElement.SendKeys("Google");
             inputElement.Submit();
-            Thread.Sleep(100000);
+            Thread.Sleep(5000);
         }
 
         [TearDown]
