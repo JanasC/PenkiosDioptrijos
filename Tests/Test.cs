@@ -2,6 +2,7 @@
 using PenkiosDioptrijos;
 using OpenQA.Selenium;
 using System.Threading;
+using System;
 
 namespace Test
 {     [TestFixture]     public class UnitTests     {
@@ -12,6 +13,7 @@ namespace Test
         public void TestInitialize()
         {
             driver = testBase.GetDriverInstance();
+            Console.WriteLine("Instance opened...");
         }
 
         [Test]         public void TestMethod()         {
