@@ -18,9 +18,10 @@ namespace Test
 
         [Test]         public void TestMethod()         {
             var inputElement = driver.FindElement(By.Id("lst-ib"));
+            Console.WriteLine("Finding elements...");
             inputElement.SendKeys("Google");
             inputElement.Submit();
-            Thread.Sleep(5000);
+            Thread.Sleep(100000);
         }
 
         [TearDown]
