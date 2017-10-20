@@ -5,7 +5,10 @@ using System.Threading;
 using System;
 
 namespace Test
-{     [TestFixture]     public class UnitTests     {
+{
+    [TestFixture]
+    public class UnitTests
+    {
         private TestBase testBase = new TestBase();
         private IWebDriver driver;
         
@@ -16,7 +19,9 @@ namespace Test
             Console.WriteLine("Instance opened...");
         }
 
-        [Test]         public void TestMethod()         {
+        [Test]
+        public void TestMethod()
+        {
             var inputElement = driver.FindElement(By.Id("lst-ib"));
             Console.WriteLine("Finding elements...");
             inputElement.SendKeys("Google");
@@ -30,4 +35,4 @@ namespace Test
             testBase.CleanUp();
         }
     }
-} 
+}
